@@ -1,6 +1,6 @@
 #' Reverse a string
 #'
-#' This function takes a single string as input and returns its reverse.
+#' This function takes a single string as an argument and returns its reverse.
 #'
 #' @param str A single string to be reversed.
 #'
@@ -9,5 +9,5 @@
 #' @examples
 #' reverse_string("hello")
 reverse_string <- function(str) {
-    stringi::stri_reverse(str)
+  return(intToUtf8(rev(utf8ToInt(str))))
 }
